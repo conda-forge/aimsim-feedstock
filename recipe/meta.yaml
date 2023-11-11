@@ -1,5 +1,5 @@
 {% set name = "aimsim" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aimsim-{{ version }}.tar.gz
-  sha256: afe38716e544e64a67bddf91cb444a8195ea4ce7de6d028ff1ad787b24431b96
+  sha256: a2983b3f17bc691b38d877c6b7de47a9316fee2b5adfae8cdcb44085f1ade106
 
 build:
   entry_points:
