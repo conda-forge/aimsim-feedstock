@@ -1,5 +1,5 @@
 {% set name = "aimsim" %}
-{% set version = "2.1.3" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aimsim-{{ version }}.tar.gz
-  sha256: 437c8a2d54901affef45be50a187eea0c3cf47e5b26a886d7f3b30f33e1b0c3d
+  sha256: cbbd1c913b70dbe75bb1df8812171c4b7a086915499d99c11d8106fd26962b10
 
 build:
   entry_points:
@@ -28,7 +28,6 @@ requirements:
     - tabulate
     - numpy
     - multiprocess >=0.70
-    - scikit-learn-extra
     - pandas
     - pyyaml >=5
     - scikit-learn
