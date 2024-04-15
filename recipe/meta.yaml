@@ -28,7 +28,6 @@ requirements:
     - tabulate
     - numpy
     - multiprocess >=0.70
-    - scikit-learn-extra
     - pandas
     - pyyaml >=5
     - scikit-learn
