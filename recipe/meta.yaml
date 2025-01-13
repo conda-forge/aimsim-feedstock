@@ -1,5 +1,6 @@
 {% set name = "aimsim" %}
 {% set version = "2.2.2" %}
+{% set python_min = "3.8" %}
 
 package:
   name: {{ name|lower }}
@@ -20,6 +21,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools
   run:
     - python >={{ python_min }}
     - scipy
