@@ -1,5 +1,5 @@
 {% set name = "aimsim" %}
-{% set version = "2.2.2" %}
+{% set version = "2.2.3" %}
 {% set python_min = "3.8" %}
 
 package:
@@ -8,14 +8,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/aimsim-{{ version }}.tar.gz
-  sha256: 4f7ff2a4cf327a0b78b2c5bea8e2d6faf7025ae073ed2fd10cf861463e0152c2
+  sha256: 6d73f4e7014316008deb1f5a8b8fd8bd3bd4dfbfffd4bbb4445f125e08bf5fd3
 
 build:
   entry_points:
     - aimsim=aimsim.__main__:start_AIMSim
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
